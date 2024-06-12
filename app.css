@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --primary-color: rgb(200, 70, 20)
+}
+
+nav {
+    font-family: sans-serif;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav .wrapper {
+    position: relative;
+    padding: 1rem;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+h1 span {
+    font-weight: 100;
+    opacity: 0.6;
+}
+
+.progress-container {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+}
+
+.progress {
+    height: .25rem;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+}
+
+section {
+    height: 100vh;
+    background-color: var(--primary-color);
+    opacity: 0.5;
+}
+
+section:nth-child(even) {
+    opacity: 0.2;
+}
